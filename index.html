@@ -11,7 +11,7 @@
         <div class="header-container container">
             <div class="header-logo">
                 <a class="header-link" href="#">
-                    <img class="logo" src="./img/logo_x2 1.png" alt="Логотип компании">
+                    <img class="logo" src="./img/logo_x2.png" alt="Логотип компании">
                 </a>
             </div>
             <nav class="header-menu">
@@ -48,16 +48,25 @@
                     </li>
                 </ul>
             </nav>
+            <div class="header-mobail">
+                <span class="mobail__line"></span>
+            </div>
             <form class="header-form">
                 <div class="form-location">
                     <span class="location__name">Санкт-Петербург</span>
                 </div>
+                <div class="header-modal">
+                    <span>Ваш город - <span class="text">Санкт-Петербург?</span></span>
+                    <div class="modal-button">
+                        <button class="button__agree btn">Да</button>
+                        <button class="button__change button">Сменить город</button>
+                    </div>
+                </div>
                 <div class="form-search">
-                    <img class="search__img" src="./img/Group 87.svg" alt="Поиск">
-                    <input class="form-search__input" type="text" placeholder="Поиск">
+                    <img class="search__img" src="./img/Group87.svg" alt="Поиск">
                 </div>
                 <div class="form-button">
-                    <button class="button">Войти</button>
+                    <button class="button__enter button">Войти</button>
                 </div>
             </form>
         </div>
@@ -189,15 +198,16 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="footer-container container">
             <div class="footer-nav">
-                <div class="nav-elements">
-                    <a class="elements__phone" href="tel:900">900</a>
-                    <span class="elements__text">По России бесплатно</span>
+                <div class="footer-phone">
+                    <a class="phone__number" href="tel:900">900</a>
+                    <span class="phone__info">По России бесплатно</span>
                 </div>
                 <nav class="footer-menu">
-                    <ul class="menu__list">
+                    <ul class="footer-menu__list">
                         <li class="menu__item">
                             <a class="menu__link" href="#">Купоны и сертификаты</a>
                         </li>
@@ -232,36 +242,48 @@
                 </nav>
             </div>
             <div class="footer-link">
-                <a class="link__site" href="https://www.sberbank.ru/">
-                    <img src="./img/sberlogo.svg" alt="Сайт сбербанка">
+                <a class="link__logo" href="https://www.sberbank.ru/">
+                    <img src="./img/sberlogo.svg" alt="Сбербанк логотип">
                 </a>
-                <a class="link__mobail-android" href="#">
-                    <img class="link__img-android" src="./img/google-play.svg" alt="Google play">
-                </a>
-                <a class="link__mobail-ios" href="#">
-                    <img class="link__img-ios" src="./img/app-store.svg" alt="App store">
-                </a>
-                <div class="link-social">
-                    <a class="social__ok" href="#">
-                        <img class="social__ok-img" src="./img/ok.svg" alt="Одноклассники">
-                    </a>
-                    <a class="social__fb" href="#">
-                        <img class="social__fb-img" src="./img/fb.svg" alt="Фейсбук">
-                    </a>
-                    <a class="social__vk" href="#">
-                        <img class="social__vk-img" src="./img/vk.svg" alt="Вконтакте">
-                    </a>
-                    <a class="social__inst" href="#">
-                        <img class="social__inst-img" src="./img/inst.svg" alt="Инстаграм">
-                    </a>
+                <div class="footer-app">
+                    <div class="wrap-app">
+                        <a class="app__link-android" href="#">
+                            <img class="link__img" src="./img/google-play.svg" alt="Google play">
+                        </a>
+                        <a class="app__link-ios" href="#">
+                            <img class="link__img" src="./img/app-store.svg" alt="App store">
+                        </a>
+                    </div>
+                    <div class="wrap-link">
+                        <a class="link__social" href="#">
+                            <img class="social__img" src="./img/ok.svg" alt="Одноклассники">
+                        </a>
+                        <a class="link__social" href="#">
+                            <img class="social__img" src="./img/fb.svg" alt="Фейсбук">
+                        </a>
+                        <a class="link__social" href="#">
+                            <img class="social__img" src="./img/vk.svg" alt="Вконтакте">
+                        </a>
+                        <a class="link__social" href="#">
+                            <img class="social__img" src="./img/inst.svg" alt="Инстаграм">
+                        </a>
+                    </div>
                 </div>
+
             </div>
-            <div class="info">
+            <div class="footer-info">
                 <span class="info__date">&copy; 1997—2019 ПАО Сбербанк.</span>
-                <p class="info__desc"><a class="info__link" href="#">Политика</a> АО «ЦПЛ» в отношении обработки персональных данных и <a class="info__link" href="#">Согласие</a> на обработку данных участника Программы «Спасибо от Сбербанка»</p>
+                <p class="info__text"><a class="link" href="#">Политика</a> АО «ЦПЛ» в отношении обработки персональных данных и <a class="link" href="#">Согласие</a> на обработку данных участника Программы «Спасибо от Сбербанка»</p>
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-item">        
+            <input class="item__input" type="text" placeholder="Поиск">
+            <input class="item__button" type="button" value=" ">
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
